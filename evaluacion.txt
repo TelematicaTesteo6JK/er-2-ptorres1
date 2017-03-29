@@ -1,0 +1,38 @@
+
+1) Sillas de madera.
+
+Una mueblería aplica precios especiales por cantidades de sillas de madera. Las cantidades son de 1 a 4 sillas = $30 por silla, de 5 a 10 sillas = $20 por silla, de 11 a 30 sillas = $15 por silla, y más de 30 sillas = $10 por silla. El sistema usado para pedidos a domicilio debe reconocer la cantidad solicitada por el cliente y aplicar el precio respectivo.
+
+2) Nivel de prueba: Integración, porque está comprobando los valores dados y regresando un valor conforme a eso, no sólo comprueba que esté introduciendo los datos.
+
+3)
+
+Particiones:
+— 0 = Favor de seleccionar una cantidad(ME)
+- De 1 a 4 = $30 c/u
+- De 5 a 10 = $20 c/u
+- De 11 a 30 = $15 c/u
+- Más de 30 = $10 c/u
+
+Test data: TD
+Expected result: ER
+Actual result: AR
+
+|————————————————————————
+|TD	|ER	|AR	|
+|————————————————————————
+|0	|ME	|	|
+|2	|$60	|	|
+|6	|$120	|	|
+|12	|$180	|	|
+|40	|$400	|	|
+|————————————————————————
+|0	|ME	|	|
+|1	|$30	|	|
+|4	|$120	|	|
+|5	|$100	|	|
+|10	|$200	|	|
+|11	|$165	|	|
+|30	|$450	|	|
+|31	|$310	|	|
+|———————————————————————-
